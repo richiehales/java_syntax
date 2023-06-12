@@ -12,7 +12,6 @@ function getRandomJoke() {
     return [setUpIndex, randomSetup, punchLineIndex, randomPunchLine];
 }
 
-
 // Array of joke set-ups
 const setUp = [
     "Why did the chicken cross the road?",
@@ -48,3 +47,10 @@ joke.push(randomPunchLine);
 
 // Print random joke as sentence (remove commas from array)
 console.log(joke.join(" "));
+
+// Print response to random joke
+if (setUpIndex === punchLineIndex){
+    console.log("Haha. Very funny");
+} else {
+    console.log("I do not understand that joke!")
+}
